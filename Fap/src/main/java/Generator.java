@@ -4,19 +4,21 @@ public class Generator {
     private final int maxValue;
     private final Random random = new Random();
 
+    // 构造函数，传入最大值
     public Generator(int maxValue) {
         this.maxValue = maxValue;
     }
-
+    // 生成表达式
     public Expression generate() {
         return new Expression(buildNode(3));
     }
-
+    // 递归生成表达式节点
     private ExpressionNode buildNode(int depth) {
         if (depth == 0 || random.nextDouble() < 0.3) {
             return new NumberNode(generateFraction());
         }
 
+        // 生成加减乘除节点
         int type = random.nextInt(4);
         ExpressionNode left = buildNode(depth - 1);
         ExpressionNode right = buildNode(depth - 1);
@@ -30,6 +32,7 @@ public class Generator {
         }
     }
 
+    //确保左表达式值大于或等于右表达式值
     private ExpressionNode ensureLeftGreaterOrEqual(ExpressionNode left, ExpressionNode right) {
         while (true) {
             Fraction leftValue = left.evaluate();
@@ -39,6 +42,7 @@ public class Generator {
         }
     }
 
+    //确保除数不为0且大于1
     private ExpressionNode ensureDivisorValid(ExpressionNode node) {
         while (true) {
             Fraction value = node.evaluate();
@@ -47,6 +51,7 @@ public class Generator {
         }
     }
 
+    //生成随机分数
     private Fraction generateFraction() {
         int denominator = random.nextInt(maxValue - 1) + 1;
         int numerator = random.nextInt(maxValue * denominator) + 1;
