@@ -54,7 +54,7 @@ public class Generator {
     //生成随机分数
     private Fraction generateFraction() {
         int denominator = random.nextInt(maxValue - 1) + 1;
-        int numerator = random.nextInt(maxValue * denominator) + 1;
+        int numerator = random.nextInt(maxValue) + 1;
         return new Fraction(numerator, denominator);
     }
 }
