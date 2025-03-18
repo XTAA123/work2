@@ -4,11 +4,13 @@ public class Fraction {
 
     // 构造函数，初始化分数并约分
     public Fraction(int numerator, int denominator) {
-        if (denominator == 0) throw new ArithmeticException("Denominator cannot be zero");
+        if (denominator == 0) throw new ArithmeticException("分母不能为零");
+        // 如果分母为负数，则将分子和分母都取相反数
         if (denominator < 0) {
             numerator *= -1;
             denominator *= -1;
         }
+        // 约分
         int gcd = gcd(Math.abs(numerator), denominator);
         this.numerator = numerator / gcd;
         this.denominator = denominator / gcd;
@@ -16,6 +18,7 @@ public class Fraction {
 
     // 分数加法
     public Fraction add(Fraction other) {
+        // 通分
         int newNum = numerator * other.denominator + other.numerator * denominator;
         int newDen = denominator * other.denominator;
         return new Fraction(newNum, newDen);
@@ -24,12 +27,6 @@ public class Fraction {
     // 分数减法
     public Fraction subtract(Fraction other) {
         return add(new Fraction(-other.numerator, other.denominator));
-    }
-
-    public int compareTo(Fraction other) {
-        int thisNum = this.numerator * other.denominator;
-        int otherNum = other.numerator * this.denominator;
-        return Integer.compare(thisNum, otherNum);
     }
 
     // 分数乘法
@@ -41,6 +38,13 @@ public class Fraction {
     public Fraction divide(Fraction other) {
         return multiply(new Fraction(other.denominator, other.numerator));
     }
+
+        // 比较两个分数
+        public int compareTo(Fraction other) {
+            int thisNum = this.numerator * other.denominator;
+            int otherNum = other.numerator * this.denominator;
+            return Integer.compare(thisNum, otherNum);
+        }
 
     // 判断两个分数是否相等
     public boolean equals(Object obj) {

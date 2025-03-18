@@ -60,7 +60,7 @@ public class Checker {
 
 
     // 解析分数字符串
-    private static Fraction parseFraction(String s) {
+    public static Fraction parseFraction(String s) {
         s = s.trim();
         if (s.contains("'")) { // 处理带整数部分的分数
             String[] parts = s.split("['/]"); // 分割整数部分、分子和分母
