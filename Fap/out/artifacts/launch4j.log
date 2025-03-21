@@ -1,0 +1,20 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\XTAA\Desktop\Fap\out\artifacts\Fap.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\XTAA\Desktop\Fap\out\artifacts\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = D:\KAIFA\java
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;D:\KAIFA\java\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\XTAA\Downloads\apache-maven-3.9.6\bin;D:\tomcat10\apache-tomcat-10.1.23\bin;D:\tomcat10\apache-tomcat-10.1.23\bin;C:\Program Files\dotnet\;D:\git\Git\cmd;C:\Users\XTAA\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\XTAA\AppData\Local\Programs\Python\Python312\;C:\Users\XTAA\AppData\Local\Programs\Python\Launcher\;C:\Users\XTAA\AppData\Local\Microsoft\WindowsApps;C:\Users\XTAA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\XTAA\AppData\Local\GitHubDesktop\bin;C:\Users\XTAA\AppData\Local\Programs\cursor\resources\app\bin;D:\QuartusLite\modelsim_ase\win32aloem;D:\KAIFA\java\bin
+JRE paths:	D:\KAIFA\java;C:\Program Files\Common Files\Oracle\Java\javapath;D:\KAIFA\java\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\XTAA\Downloads\apache-maven-3.9.6\bin;D:\tomcat10\apache-tomcat-10.1.23\bin;D:\tomcat10\apache-tomcat-10.1.23\bin;C:\Program Files\dotnet\;D:\git\Git\cmd;C:\Users\XTAA\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\XTAA\AppData\Local\Programs\Python\Python312\;C:\Users\XTAA\AppData\Local\Programs\Python\Launcher\;C:\Users\XTAA\AppData\Local\Microsoft\WindowsApps;C:\Users\XTAA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\XTAA\AppData\Local\GitHubDesktop\bin;C:\Users\XTAA\AppData\Local\Programs\cursor\resources\app\bin;D:\QuartusLite\modelsim_ase\win32aloem;D:\KAIFA\java\bin
+Check launcher:	D:\KAIFA\java\bin\javaw.exe (OK)
+Version string: 1.017.000_010 / 64-Bit (OK)
+Launcher:	D:\KAIFA\java\bin\javaw.exe
+Launcher args:	-jar "C:\Users\XTAA\Desktop\Fap\out\artifacts\Fap.exe"
+Args length:	54/32768 chars
+Exit code:	0

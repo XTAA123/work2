@@ -1,5 +1,5 @@
 import org.junit.Test;
-import static org.junit.Assert.*;
+
 import java.text.ParseException;
 
 //测试 ExpressionParser（表达式解析器）是否能够正确解析数学表达式
